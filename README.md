@@ -29,8 +29,9 @@ It started as the workflow one candidate built with [Claude Code](https://claude
 - [`templates/`](templates/) — starter files the AI will fill in with you:
   - `CLAUDE.md.template` — project brief / context file the AI keeps loaded
   - `Career_Inventory.md.template` — the master inventory built during the long interview
-  - `CV.html.template` — a clean, print-to-PDF HTML CV
   - `Tracker.md.template` — application pipeline tracker
+
+Note on the CV: there is intentionally no CV template in this repo. CVs are personal aesthetic artifacts, and a one-size-fits-all template fights every candidate's actual preferences. The methodology instead has the AI ask *you* for a CV you want to model after — your existing one, or one you admire — and build from there.
 
 ## Philosophy
 
@@ -42,7 +43,3 @@ It started as the workflow one candidate built with [Claude Code](https://claude
 ## License
 
 MIT. Take it, fork it, improve it.
-
-## Credit
-
-Methodology developed by [Alexis Richard](https://www.linkedin.com/in/alexis-richard-77053857/) during his own 2026 search, in collaboration with Claude.

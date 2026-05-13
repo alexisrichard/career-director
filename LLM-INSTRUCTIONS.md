@@ -145,32 +145,41 @@ Use separate memory files (if your environment supports them) or clearly-marked 
 
 **Goal:** one well-designed CV that becomes the master from which all role-specific variants are forked.
 
-### Design choices
+### Step 1: Ask the candidate for a model
 
-Use HTML, not Word. Reasons:
+CVs are personal aesthetic artifacts. Before designing anything, **ask the candidate to provide a model**, one of:
+- Their existing CV (any format — PDF, Word, HTML, image)
+- A CV they admire and want to model theirs after
+- A clear description of the layout and tone they want (sidebar vs. single-column, formal vs. modern, conservative vs. distinctive)
+
+Use that as the visual and structural reference. Do not impose a template — even a good one — without first understanding what aesthetic the candidate actually wants.
+
+### Step 2: Recommended format — HTML
+
+If the candidate is flexible on format, recommend HTML over Word/Google Docs. Reasons:
 - Pixel-precise design control
 - Easy to render to PDF via browser print
 - Version-control friendly
-- Easy to fork per application
+- Easy to fork per application (just copy the file)
 
-The provided [`templates/CV.html.template`](templates/CV.html.template) is a clean two-column layout: dark accent header with photo on left, two-column body (sidebar + main content). Print-CSS included.
+If they prefer Word, that's fine — work in their preferred format.
 
-### Content priorities
+### Step 3: Content priorities
 
 - **Profile paragraph** (~120-180 words) is the most-tailored part. It's where you fork per application.
 - **Employment history** in reverse chronological order. Each entry: role, company, dates, location, 2-5 sentences of substance.
 - **Education** compact.
 - **Sidebar:** location, contact, links (LinkedIn / portfolio / personal site), languages, skills, hobbies.
 
-### Sidebar skills — what to include
+### Step 4: Sidebar skills — what to include
 
 - **AI** (if relevant to target roles): list specific tools / frameworks the candidate has actually used, not abstractions.
 - **Domains:** sectors and functional areas where they have depth.
 - Avoid listing programming languages as personal skills *unless* the candidate genuinely codes day-to-day. If they're an architect using AI to ship, say so honestly — don't pretend they're a senior developer.
 
-### Iterate, don't perfect-once
+### Step 5: Iterate, don't perfect-once
 
-Show the candidate a draft, take their corrections, save the corrections to memory (so you don't repeat the same mistakes), produce a v2. Repeat 3-5 times.
+Show the candidate a draft, take their corrections, save the corrections to memory (so you don't repeat the same mistakes), produce a v2. Repeat 3-5 times until they're happy with the master version.
 
 ---
 
@@ -226,7 +235,7 @@ Applications/
 ### What to tailor per application
 
 - **Profile paragraph** in the CV — *always* tailor. Different angle per audience.
-- **Sidebar skills emphasis** — reorder lists to lead with what matters for this role. For a Mistral application, list Mistral first. For OpenAI, OpenAI first.
+- **Sidebar skills emphasis** — reorder lists to lead with what matters for this role. If applying to a company that builds product X, list X first in the relevant skill line.
 - **One or two project descriptions** may be tweaked to highlight role-relevant aspects.
 - Most of the CV stays stable; you're tilting emphasis, not rewriting.
 

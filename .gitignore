@@ -4,8 +4,9 @@ Career_Inventory.md
 CLAUDE.md
 PROJECT_BRIEF.md
 *.pdf
-photo.jpeg
-AR*.jpeg
+*.jpeg
+*.jpg
+*.png
 
 # OS / editor noise
 .DS_Store
