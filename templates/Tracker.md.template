@@ -1,0 +1,43 @@
+# Applications Tracker
+
+> Manual log of every active application and outreach. Updated as state changes.
+
+---
+
+## Active
+
+### {{ Company }} — {{ Role title }} ({{ Location }})
+- **Applied:** {{ YYYY-MM-DD }} via {{ channel — portal, email, friend, etc. }}
+- **Status:** {{ Awaiting response / In process / Offer / etc. }}
+- **CV variant:** `Applications/{{ Company }}/CV.html`
+- **Next check:** {{ YYYY-MM-DD }} (~N weeks of silence = follow up or move on)
+- **Notes:** {{ Why this matters, any context-specific framing }}
+- **History:**
+  - {{ YYYY-MM-DD }}: {{ State change with one-line description }}
+
+---
+
+## Closed / Not pursued
+
+- **{{ Company }} — {{ Role }}:** {{ Brief reason }}
+
+---
+
+## Outreach pipeline (not applications)
+
+> Warm-intro plays, exec-search firm contacts, network conversations. *Not the same as active applications* — these are pre-application work.
+
+### {{ Firm / Person — e.g. "Heidrick & Struggles — Frédéric Groussolles (Paris)" }}
+- **Status:** Not yet contacted / In conversation / Closed
+- **Plan:** {{ Specific next step — warm intro path, coffee, etc. }}
+- **Rationale:** {{ Why this contact matters }}
+
+---
+
+## Conventions (so the tracker stays consistent)
+
+- **Status values:** Awaiting response · In process · Offer · Declined · Rejected · Withdrawn · Stale
+- **Always log a `Next check` date** so silence becomes informative on a schedule, not by accident.
+- **Append to `History`, never overwrite.** Each state change gets a dated entry.
+- **Warm-intro outreach goes under `Outreach pipeline`**, not `Active` (those aren't applications yet).
+- **Closed / Not pursued entries** include a brief reason — useful for the next scouting pass.

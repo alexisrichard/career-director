@@ -1,0 +1,14 @@
+# Don't commit any actual job-search content if someone uses this folder directly
+Applications/
+Career_Inventory.md
+CLAUDE.md
+PROJECT_BRIEF.md
+*.pdf
+photo.jpeg
+AR*.jpeg
+
+# OS / editor noise
+.DS_Store
+.vscode/
+.idea/
+*.swp

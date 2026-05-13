@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ CANDIDATE NAME }} — CV</title>
+<style>
+  /* ---------- Page setup ---------- */
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+    font-size: 10pt;
+    line-height: 1.45;
+  }
+
+  :root {
+    /* Customize the accent color to taste. Defaults to dark teal. */
+    --accent: #1f3a3d;
+    --accent-soft: #2f5559;
+    --muted: #666;
+    --rule: #c8d4d5;
+  }
+
+  /* ---------- Layout ---------- */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #fff;
+  }
+
+  /* Header */
+  .header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: stretch;
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .header .photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+    background: #ddd;
+  }
+
+  .header .header-text {
+    padding: 28px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 30pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.1;
+  }
+
+  .header .subtitle {
+    font-size: 14pt;
+    margin-top: 4px;
+    font-weight: 300;
+    opacity: 0.92;
+  }
+
+  .header .contact {
+    margin-top: 20px;
+    font-size: 10pt;
+    opacity: 0.95;
+  }
+
+  .header .contact a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /* Body */
+  .body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 28px;
+    padding: 24px 32px 28px;
+  }
+
+  /* Sidebar */
+  .sidebar h3 {
+    font-size: 9.5pt;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  .sidebar .field {
+    margin-bottom: 14px;
+    font-size: 9.5pt;
+  }
+
+  .sidebar .field .value {
+    color: #333;
+  }
+
+  .lang-bars {
+    display: flex;
+    gap: 3px;
+    margin-top: 3px;
+  }
+  .lang-bars .bar {
+    height: 4px;
+    width: 22px;
+    background: #1a1a1a;
+    border-radius: 1px;
+  }
+  .lang-bars .bar.empty { background: #d6d6d6; }
+
+  .sidebar ul.tight {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .sidebar ul.tight li { margin-bottom: 2px; }
+
+  .skill-block { margin-bottom: 6px; }
+  .skill-block .skill-label {
+    font-size: 9pt;
+    color: var(--muted);
+    margin-bottom: 1px;
+  }
+  .skill-block .skill-value {
+    font-size: 9.5pt;
+    color: #1a1a1a;
+  }
+
+  /* Main */
+  main h2 {
+    font-size: 14pt;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 6px;
+  }
+  main h2:not(:first-child) { margin-top: 22px; }
+
+  main section { margin-bottom: 0; }
+
+  .entry {
+    margin-top: 14px;
+    page-break-inside: avoid;
+  }
+
+  .entry .role {
+    font-weight: 700;
+    font-size: 10.5pt;
+    margin: 0;
+    color: #1a1a1a;
+  }
+
+  .entry .role .company-accent {
+    color: var(--accent-soft);
+  }
+
+  .entry .dates {
+    color: var(--muted);
+    font-size: 9pt;
+    margin: 2px 0 6px 0;
+    font-style: italic;
+  }
+
+  .entry p {
+    margin: 0 0 4px 0;
+    text-align: left;  /* Avoid `justify` — produces word-spacing rivers at this size */
+  }
+
+  .entry ul {
+    margin: 3px 0 4px 18px;
+    padding: 0;
+  }
+  .entry ul li { margin-bottom: 1px; }
+
+  .entry .stack {
+    margin-top: 6px;
+    font-size: 9pt;
+    color: var(--muted);
+  }
+  .entry .stack strong {
+    color: #333;
+    font-weight: 600;
+  }
+
+  .compact-entry { margin-top: 6px; }
+  .compact-entry .role { font-size: 10pt; }
+
+  /* Print */
+  @media print {
+    html, body { background: #fff; }
+    .page {
+      width: 210mm;
+      min-height: auto;
+      margin: 0;
+      box-shadow: none;
+    }
+    .entry { page-break-inside: avoid; }
+    main h2 { page-break-after: avoid; }
+  }
+
+  @media screen {
+    body { background: #ececec; padding: 24px 0; }
+    .page { box-shadow: 0 2px 14px rgba(0,0,0,0.12); }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="header">
+    <img class="photo" src="photo.jpeg" alt="{{ CANDIDATE NAME }}">
+    <div class="header-text">
+      <h1>{{ CANDIDATE NAME }}</h1>
+      <div class="subtitle">{{ Identity tagline — keep short and authentic, e.g. "Engineer · Entrepreneur" }}</div>
+      <div class="contact">
+        {{ phone }} &middot;
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="body">
+
+    <aside class="sidebar">
+      <div class="field">
+        <h3>Date of birth</h3>
+        <div class="value">{{ DD/MM/YYYY }}</div>
+      </div>
+
+      <div class="field">
+        <h3>Nationality</h3>
+        <div class="value">{{ nationality }}</div>
+      </div>
+
+      <div class="field">
+        <h3>Location</h3>
+        <div class="value">{{ city · city · city }}</div>
+      </div>
+
+      <div class="field">
+        <h3>Links</h3>
+        <div class="value"><a href="{{ linkedin url }}">{{ linkedin display }}</a></div>
+        <div class="value"><a href="{{ other url }}">{{ other display }}</a></div>
+      </div>
+
+      <div class="field">
+        <h3>Languages</h3>
+        <div class="value">{{ Language 1 }}</div>
+        <div class="lang-bars">
+          <span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="value" style="margin-top:6px;">{{ Language 2 }}</div>
+        <div class="lang-bars">
+          <span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span><span class="bar"></span>
+          <span class="bar empty"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <h3>Skills</h3>
+        <div class="skill-block">
+          <div class="skill-label">{{ Category 1 — e.g. AI }}</div>
+          <div class="skill-value">{{ specific tools / frameworks / techniques — comma or middot separated }}</div>
+        </div>
+        <div class="skill-block">
+          <div class="skill-label">Domains</div>
+          <div class="skill-value">{{ sectors and functional areas of depth }}</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <h3>Hobbies</h3>
+        <ul class="tight">
+          <li>{{ hobby 1 }}</li>
+          <li>{{ hobby 2 }}</li>
+          <li>{{ hobby 3 }}</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+
+      <section>
+        <h2>Profile</h2>
+        <div class="entry" style="margin-top:8px;">
+          <p>{{ ~120-180 words. The most-tailored paragraph in the CV — fork per application. Lead with the candidate's authentic identity. Hit the 2-3 strongest facts. Close with what they're looking for and a values line. Match their actual voice — no buzzwords. }}</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Employment History</h2>
+
+        <div class="entry">
+          <p class="role">{{ Role }}, <span class="company-accent">{{ Company }}</span></p>
+          <p class="dates">{{ Start }} — {{ End or Present }} · {{ City }}</p>
+          <p>{{ 2-5 sentences of substance: what they did, key achievements with numbers, what stands out. Don't make this a job description; make it the story.}}</p>
+          <p class="stack"><strong>Stack:</strong> {{ relevant tech if applicable }}</p>
+        </div>
+
+        <div class="entry">
+          <p class="role">{{ Next role }}, <span class="company-accent">{{ Next company }}</span></p>
+          <p class="dates">{{ Start }} — {{ End }} · {{ City }}</p>
+          <p>{{ Substance }}</p>
+        </div>
+
+        <!-- More entries as needed, reverse chronological -->
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="entry compact-entry">
+          <p class="role">{{ Degree }} — <span class="company-accent">{{ Institution, City }}</span></p>
+          <p class="dates">{{ Year start }} — {{ Year end }}</p>
+        </div>
+
+        <div class="entry compact-entry">
+          <p class="role">{{ Degree }} — <span class="company-accent">{{ Institution, City }}</span></p>
+          <p class="dates">{{ Year start }} — {{ Year end }}</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Internships</h2>
+
+        <div class="entry compact-entry">
+          <p class="role">{{ Role }}, <span class="company-accent">{{ Company }}</span> — {{ City }}</p>
+          <p class="dates">{{ Start }} — {{ End }}</p>
+          <p>{{ Brief description, ideally an interesting story. }}</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

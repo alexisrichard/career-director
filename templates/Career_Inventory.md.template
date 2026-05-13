@@ -1,0 +1,115 @@
+# Career Inventory — {{ candidate_name }}
+
+> **What this is.** Master reservoir of detail, stories, and angles per role, plus the cross-career patterns that connect them.
+>
+> **What it isn't.** Not for sending. Mine it when tailoring a CV, cover letter, pitch, or interview prep for a given company.
+>
+> **Structure per role.** Context → What I did → Concrete achievements → Stories worth telling → Skills demonstrated → Angles. Cross-career patterns sit in a dedicated section near the top.
+
+## Contents
+
+- **Personal Story & Philosophy** — values, heroes, family context, recurring themes
+- **Cross-Career Themes & Design Philosophies** — patterns running through the whole arc; mine these for cover-letter openers and "tell me your story" answers
+- **Live Opportunities** — current state pointer; ground truth lives in the project brief + memory
+- **Roles (reverse chronological):** newest first
+
+---
+
+## Personal Story & Philosophy
+
+### The long-running thread
+{{ The deliberate strategy that connects the candidate's career arc. What were they always trying to do? Where did they zoom out and recalibrate? }}
+
+### Heroes / mental models
+{{ Who they look up to and *why* — what those people teach them about how to operate. This shapes how they frame their own arc. }}
+
+### Long-running thesis
+{{ The conviction(s) the candidate has been on for years. Often the deepest source of credibility — "I have been betting on this since X." }}
+
+### Family / personal context — *private, not for CV or external materials*
+{{ Anything sensitive that helps the AI understand the candidate — family connections, life events, things that affect the search but never get mentioned externally. Mark clearly as private. }}
+
+How to handle:
+- **CV / cover letters:** do not mention. Let the work speak.
+- **Interviews:** own it openly if the moment arises. Don't be defensive.
+- **Background:** any informed interviewer will already know. Pretending otherwise is the worst move.
+
+---
+
+## Cross-Career Themes & Design Philosophies
+
+> Patterns that run through the entire arc. Mine these when writing cover letters, opening interviews, or framing the "tell me your story" answer.
+>
+> *Build this section AFTER you've walked through 3+ roles in detail. The patterns emerge from the specifics, not the other way around.*
+
+### 1. {{ Pattern name — e.g. "The long-running AI thread" }}
+{{ Where it shows up across roles. The continuity argument. Why it matters as a differentiator. }}
+
+### 2. {{ Pattern name — e.g. "Operator-founder-builder trifecta" }}
+{{ Description }}
+
+### 3. {{ Pattern name — e.g. "Voice-of-the-CEO / narrative muscle" }}
+{{ Description }}
+
+*Add as many as emerge — typically 5-10 patterns by the end of a thorough inventory.*
+
+---
+
+## Live Opportunities
+
+> Working state, not historical. Ground truth lives in `Applications/Tracker.md` and the project brief.
+
+- **{{ Company 1 }}** — {{ one-line status }}
+- **{{ Company 2 }}** — {{ one-line status }}
+
+---
+
+## Roles (reverse chronological)
+
+---
+
+## {{ Role title }} — {{ Company }}
+**Dates:** {{ start month/year }} — {{ end month/year or Present }}
+**Location:** {{ city }}
+
+### Context
+{{ Situation when joined. The mandate. How they got the role. Who hired them and why. }}
+
+### What I did
+{{ Fuller breakdown than CV — responsibilities, workstreams, key projects. Should be longer than the CV version. }}
+
+### Concrete achievements
+- {{ Numbers, named deals, named outcomes }}
+- {{ Specific projects shipped }}
+- {{ Anything quantifiable }}
+
+### Stories worth telling
+- {{ Anecdote that illustrates character or judgment — interview gold }}
+- {{ A moment of decision under pressure }}
+- {{ Specific named people / situations that mattered }}
+
+### Skills demonstrated
+- {{ What this role proves about the candidate }}
+
+### Angles
+- **For {{ target role type 1 }}:** {{ how to frame this role for that audience }}
+- **For {{ target role type 2 }}:** {{ different framing for different audience }}
+
+---
+
+## {{ Next role title }} — {{ Next company }}
+{{ ... same shape ... }}
+
+---
+
+*Continue for every role, including short ones and internships. Even brief roles often contain a single useful story.*
+
+---
+
+## Notes on writing this inventory
+
+- **Capture verbatim quotes** from the candidate. *"I felt invincible"* / *"Every job looks pretty chill after that"* — direct quotes are gold for later cover letters.
+- **Capture specific names** — people, deals, companies. They unlock reference candidates and warm-intro paths later.
+- **Capture specific numbers** — revenue, team size, raise amounts, deal sizes.
+- **Mark audience-calibrated framings** — when the same fact can be framed for different audiences, capture both versions.
+- **Don't sanitize.** This file is private. Capture the honest version, including parts that won't appear externally.

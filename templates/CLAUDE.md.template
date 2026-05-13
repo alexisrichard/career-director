@@ -1,0 +1,63 @@
+# Project Brief — {{ candidate_name }} Job Search
+
+> Replace the placeholders below with the candidate's actual information.
+> This file lives at the project root and is read first in every new session.
+> Keep it concise (under 200 lines). Rich detail belongs in `Career_Inventory.md`.
+
+## About the candidate
+
+{{ Two sentences. Training, current state, what they're known for. }}
+
+Example shape:
+> Engineer (Top engineering school) and {{ Master / additional credential }}. Currently {{ current state — building X, between roles, etc. }}. Known for: {{ the one or two things people credit them for }}.
+
+## Target tracks
+
+In priority order:
+
+### Track 1 — {{ Primary track }}
+- **Role types:** {{ specific titles }}
+- **Sectors of interest:** {{ list specific sectors }}
+- **Companies on the radar:** {{ live opportunities or named targets }}
+- **Why it fits:** {{ the candidate's specific value prop for this track }}
+
+### Track 2 — {{ Secondary track }}
+- **Role types:** {{ specific titles }}
+- **Sectors of interest:** {{ list }}
+- **Why it fits:** {{ specific value prop }}
+
+### Track 3 (if applicable)
+{{ same shape }}
+
+## Anti-targets — DO NOT pursue
+
+- **Sectors:** {{ explicit ruled-out sectors }}
+- **Companies:** {{ explicit ruled-out companies, with reason }}
+- **Role types:** {{ explicit ruled-out role shapes }}
+
+## Constraints
+
+- **Location:** {{ cities or countries, in preference order }}
+- **Compensation:** {{ cash target, equity preferences, currency notes }}
+- **Languages:** {{ native and fluent levels }}
+- **Family / life-stage:** {{ time anchors that affect decisions — children, partner's location, etc. }}
+
+## Live opportunities (current state, kept up to date)
+
+Use this section as the at-a-glance summary. Detailed state lives in `Applications/Tracker.md`.
+
+- **{{ Company 1 }}** — {{ status + one-line note }}
+- **{{ Company 2 }}** — {{ status + one-line note }}
+
+## Key files in this workspace
+
+- `Career_Inventory.md` — master long-form inventory of every role with stories, achievements, angles. *Mine from here when tailoring CV or writing cover letters; never send this file directly.*
+- `Applications/Tracker.md` — pipeline state
+- `Applications/<Company>/` — per-application folders with tailored CV variants
+- {{ photo file name }} — profile photo used in the CV header
+
+## Working style notes
+
+- {{ Voice / register rules — e.g. "humble, no buzzwords; preserve their idioms" }}
+- {{ Any candidate-specific guidance — e.g. "always check with me before sending personalized recruiter emails" }}
+- {{ Language preferences — e.g. "all materials in English even for French-market applications" }}
