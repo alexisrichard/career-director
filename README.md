@@ -11,9 +11,9 @@ It started as the workflow one candidate built with [Claude Code](https://claude
 
 ## Who it's for
 
-- Candidates running a senior or strategic job search (Head of X, leadership, FDE, etc.) where one-size-fits-all CVs lose
-- People who want their AI to know them deeply enough to write *actually good* tailored materials, not generic outputs
-- Job-seekers willing to invest 2-4 hours upfront in a structured interview to get years of leverage on the output
+- Anyone running a job search who wants their AI to know them deeply enough to produce *actually good* tailored materials, not generic outputs
+- Works for any career stage and any field — senior executives, mid-career professionals, fresh graduates, career changers, trades professionals, creatives, healthcare, legal, hospitality, anyone
+- Best fit for candidates willing to invest 2-4 hours upfront in a structured interview to get months of leverage on the output
 
 ## How to use it
 

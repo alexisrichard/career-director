@@ -64,13 +64,15 @@ How to handle:
 
 ---
 
-## Roles (reverse chronological)
+## Roles / Experiences (reverse chronological)
+
+> **For early-career candidates:** if you don't have many "roles" yet, apply the same structure below to internships, university projects, theses, substantial coursework, volunteer work, personal projects, side businesses, or any other experience where you did real work and can tell a story. The inventory's value is the *stories and skills demonstrated*, not the institutional weight of where you did them.
 
 ---
 
-## {{ Role title }} — {{ Company }}
+## {{ Role / project title }} — {{ Company / institution / "Personal project" }}
 **Dates:** {{ start month/year }} — {{ end month/year or Present }}
-**Location:** {{ city }}
+**Location:** {{ city or "Remote" or "N/A" }}
 
 ### Context
 {{ Situation when joined. The mandate. How they got the role. Who hired them and why. }}
